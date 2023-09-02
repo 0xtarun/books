@@ -29,6 +29,19 @@
             justify-content: center;
             align-items: center;
         }
+        }
+        /* Style for the fixed button */
+        .fixed-button {
+            position: fixed;
+            bottom: 20px; /* Adjust the distance from the bottom as needed */
+            right: 20px; /* Adjust the distance from the right as needed */
+            background-color: #007bff; /* Button background color */
+            color: #fff; /* Button text color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -9881,6 +9894,15 @@
         </p>
 
     </div><!--end chapter-->
+    <!-- The fixed button -->
+    <button class="fixed-button" onclick="scrollToTop()">Scroll to Top</button>
+
+    <script>
+        // JavaScript function to scroll to the top when the button is clicked
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to the top
+        }
+    </script>
 
 
 </body>
